@@ -1,33 +1,34 @@
 #include <stdio.h>
 
-int main()
-{
-    int a, b;
-    int *ptr;
-
-    a = 1234; // assigns val for var a
-    ptr = &a; // initializes ptr to address of a
-    b = *ptr; // var b is assigned val of ptr's address, which == val of var a
-
-    printf("A is %d and B is %d\n", a, b);
-
-    return (0);
-}
-
 // int main()
 // {
 //     int a, b;
 //     int *ptr;
 
-//     ptr = &a;    //address of var a
-//     *ptr = 1234; //stores 1234 in address which is also referring to var a
-//     ptr = &b;
-//     *ptr = 5678;
+//     a = 1234; // assigns val for var a
+//     ptr = &a; // initializes ptr to address of a
+//     b = *ptr; // var b is assigned val of ptr's address, which == val of var a
 
-//     printf("A is %d and B is %d \n", a, b);
+//     // printf("A is %d and B is %d\n", a, b);
+//     printf("ptr by itself is an address at %p while *ptr shows the value which is %d\n", ptr, *ptr);
 
 //     return (0);
 // }
+
+int main()
+{
+    int a, b;
+    int *ptr;
+
+    ptr = &a;    // address of var a
+    *ptr = 1234; // stores 1234 in address which is also referring to var a
+    ptr = &b;
+    *ptr = 5678;
+
+    printf("A is %d and B is %d \n", a, b);
+
+    return (0);
+}
 
 // //common mistakes
 // int main()
